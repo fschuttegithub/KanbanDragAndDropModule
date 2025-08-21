@@ -1,10 +1,10 @@
 ## Kanban Drag & Drop
 
-The Kanban Drag & Drop widget provides an interactive board where users can move cards between lanes. It is designed for Mendix web apps and supports customizable lane headers, card content, and smooth drag-and-drop interactions.
+This widget provides an interactive board where users can move cards between lanes. It is designed for Mendix web apps and supports customizable lane headers, card content, and smooth drag-and-drop interactions.
 
 ## Features
 
-- This widget supports drag and drop of cards between lanes. 
+- Enables drag and drop of cards between lanes. 
 - Lanes and cards are fully configurable through Mendix data sources.
 - Actions following the drop can be configured in a drop microflow.
 - The layout of lanes can be customized, including lane width, optional bottom sections, and empty-lane sections.
@@ -14,8 +14,8 @@ The Kanban Drag & Drop widget provides an interactive board where users can move
 ## Data
 
 - The widget requires a data source for lanes and a data source for cards.
-- Each lane must provide a decimal attribute that defines the order of lanes and an identifier attribute that is unique and stable.
-- Each card must provide a decimal attribute that defines its order within the lane and a reference from Card to Lane.
+- Each lane must provide an attribute that defines the order of lanes and an identifier attribute that is unique and stable.
+- Each card must provide an attribute that defines its order within the lane and a reference from Card to Lane.
 
 ## On drop
 
@@ -38,6 +38,8 @@ When a card is moved, the widget will set the target lane identifier and the new
 7. Finally, customize the lane and card templates to match your design.
 
 A configured example of the widget is available in the module. 
+
+![Demo](Demo.gif)
 
 ## Notes
 
