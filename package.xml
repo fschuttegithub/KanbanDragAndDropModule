@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.mendix.com/package/1.0/">
+  <modelerProject xmlns="http://www.mendix.com/modelerProject/1.0/">
+    <module name="KanbanDragandDrop" />
+    <projectFile path="project.mpr" />
+    <files>
+      <file path="widgets/kobeon.KanbanDragAndDrop.mpk" />
+      <file path="themesource/kanbandraganddrop/settings.json" />
+      <file path="themesource/kanbandraganddrop/native/design-properties.json" />
+      <file path="themesource/kanbandraganddrop/native/main.js" />
+      <file path="themesource/kanbandraganddrop/web/design-properties.json" />
+      <file path="themesource/kanbandraganddrop/web/main.scss" />
+    </files>
+  </modelerProject>
+</package>
