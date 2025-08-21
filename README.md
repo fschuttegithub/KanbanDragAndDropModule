@@ -1,6 +1,6 @@
 ## Kanban Drag & Drop
 
-This widget provides an interactive board where users can move cards between lanes. It is designed for Mendix web apps and supports customizable lane headers, card content, and smooth drag-and-drop interactions.
+This widget provides an interactive board where users can move cards between lanes. It supports customizable lane content, card content, and smooth drag-and-drop interactions.
 
 ## Features
 
@@ -35,9 +35,11 @@ When a card is moved, the widget will set the target lane identifier and the new
 4. Configure the card sort key and the Card to Lane association.
 5. Create a helper entity with attributes for the target lane id and the new sort key.
 6. Configure the on drop action microflow or nanoflow. The flow should update the Card to Lane association and the Card sort key using the values set by the widget, then commit the card.
-7. Finally, customize the lane and card templates to match your design.
+7. Customize the lane and card templates to match the desired styling.
 
-A configured example of the widget is available in the module. 
+An example of the configuration of the widget is available in the module. 
+
+
 
 ![Demo](Demo.gif)
 
@@ -46,4 +48,4 @@ A configured example of the widget is available in the module.
 - The lane identifier must always be unique and non-empty. Use an AutoNumber or UUID string to guarantee this.
 - Empty lanes are displayed as long as they are included in the lanes data source.
 - Cards are only shown if they are included in the card data source. Filtering the card data source will hide other cards, even if they belong to visible lanes.
-- This widget is not react only. In project settings, runtime, make sure "Use react client" is set to No. 
+- This widget is not react only. In project settings -> runtime -> make sure "Use react client" is set to No. 
