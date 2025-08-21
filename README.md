@@ -19,7 +19,7 @@ This widget provides an interactive board where users can move cards between lan
 
 ## On drop
 
-When a card is moved, the widget will set the target lane identifier and the new sort key. You must configure two attributes: one for the target lane id (string, integer, or long) and one for the new sort key (decimal). You must also configure a microflow or nanoflow as the on drop action. This flow receives the moved card and is responsible for updating its lane association and sort key.
+When a card is moved, the widget will set the target lane identifier and the new sort key (recommended on a non-persistent helper). You must configure two attributes: one for the target lane id (string, integer, or long) and one for the new sort key (decimal). You must also configure a microflow as the on drop action. This flow receives the moved card and is responsible for updating its the actual lane association and sort key of the card.
 
 
 ## Layout
@@ -34,7 +34,7 @@ When a card is moved, the widget will set the target lane identifier and the new
 3. Configure the lane identifier so that it is unique.
 4. Configure the card sort key and the Card to Lane association.
 5. Create a helper entity with attributes for the target lane id and the new sort key.
-6. Configure the on drop action microflow or nanoflow. The flow should update the Card to Lane association and the Card sort key using the values set by the widget, then commit the card.
+6. Configure the on drop action microflow. The flow should update the Card to Lane association and the Card sort key using the values set by the widget, then commit the card.
 7. Customize the lane and card templates to match the desired styling.
 
 An example of the configuration of the widget is available in the module. 
@@ -49,3 +49,8 @@ An example of the configuration of the widget is available in the module.
 - Empty lanes are displayed as long as they are included in the lanes data source.
 - Cards are only shown if they are included in the card data source. Filtering the card data source will hide other cards, even if they belong to visible lanes.
 - This widget is not react only. In project settings -> runtime -> make sure "Use react client" is set to No. 
+
+## Issues, Suggestions, and Feature Requests
+
+Please feel free to raise any issues, share suggestions, or request new features on the GitHub repository:
+[DragAndDropModule GitHub Issues](https://github.com/fschuttegithub/KanbanDragAndDropModule/issues)
